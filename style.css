@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.mainBox{
+    background-image: linear-gradient(blue,purple);
+    width:100vw;
+    height: 100vh;
+}
+div.container{
+    border:1px solid white;
+    background-color: rgb(208, 200, 200);
+    border-radius: 30px;
+    width:500px;
+    /* height: 300px; */
+    position: relative;
+    top:50%;
+    left:50%;
+    /* padding-left:50px; */
+    transform: translate(-50%,-50%);
+}
+img#icon{
+    margin-top:10px;
+    width: 50px;
+    /* border:1px solid red; */
+}
+span#todo{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left:30px;
+    padding-top:30px;
+}
+#box{
+    /* border:1px solid red; */
+    width:fit-content;
+    margin-top:56px;
+    margin-left:20px;
+}
+input{
+    padding:13px;
+    width:400px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: rgb(245, 241, 241);
+}
+#btn{
+    background-color:orangered;
+    color:whitesmoke;
+    width:100px;
+    height: 45px;
+    border-radius: 30px;
+    position: relative;
+    top:-45px;
+    right:-350px;
+    
+}
+
+ul#list-container{
+    padding:10px 10px 15px 50px;
+    list-style: none;
+}
+li{
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    position: relative;
+    /* padding-left:30px; */
+}
+li::before{
+    content: '';
+    position: absolute;
+    width:50px;
+    height: 50px;
+    background-image: url('/unchecked.png');
+    background-size: 50% 50%;
+    left:-30px;
+    background-repeat: no-repeat;
+}
+li.checked{
+    text-decoration: line-through;
+}
+li.checked::before{
+    content: '';
+    background-image: url(/checked.png);
+}
+
+ul li span{
+    /* border:1px solid red; */
+    position: absolute;
+    left:400px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    
+    width:25px;
+}
+ul li span:hover{
+    border-radius: 30%;
+    background-color: gainsboro;
+}
+
+
